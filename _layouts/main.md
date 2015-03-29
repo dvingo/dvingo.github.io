@@ -13,6 +13,7 @@
         <h1>Dvingo.GitHub.io</h1>
         <section id="downloads">
           <a href="https://github.com/dvingo" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+          <a href="/about.html" class="btn"></span>About</a>
         </section>
       </div>
     </header>
