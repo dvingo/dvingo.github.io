@@ -23,6 +23,7 @@
         {% for post in site.posts %}
           <li>
             <a href="{{ post.url }}">{{ post.title }}</a>
+            <span style="float:right">{{ post.date | date_to_long_string }}</span>
           </li>
         {% endfor %}
       </ul>

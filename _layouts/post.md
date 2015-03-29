@@ -10,8 +10,10 @@
   <body>
     <header>
       <div class="container">
-        <a href="{{ site.url }}"><h1>Dvingo.GitHub.io</h1></a>
-        <h2>Post: <em>{{ page.title }}</em></h2>
+        <a href="{{ site.url }}" style="text-decoration:none"><h1>Dvingo.GitHub.io</h1></a>
+        <br/>
+        <em>{{ page.title }}</em>
+        <h2><em>{{ page.date }}</em></h2>
       </div>
     </header>
     <div class="container">
