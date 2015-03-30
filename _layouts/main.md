@@ -20,14 +20,15 @@
 
     <div class="container">
       <section id="main_content">
-      <ul>
-        {% for post in site.posts %}
-          <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-            <span style="float:right">{{ post.date | date_to_long_string }}</span>
-          </li>
-        {% endfor %}
-      </ul>
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+              <span style="float:right">{{ post.date | date_to_long_string }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
     </div>
   </body>
 </html>
