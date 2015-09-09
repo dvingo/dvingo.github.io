@@ -9,15 +9,48 @@ date: 2015-07-21 00:00:00 -0500
     <meta charset="utf-8">
   </head>
   <body>
+    <p>
+      Playing around with blending two SVG images through a canvas element.
+      One design constraint was to have the SVG be inline in order to do
+      dynamic color changing before applying the blending (and to support resizing).
+      This makes use of the <a href="https://github.com/iconic/SVGInjector">SVGInjector</a> library.
+    </p>
+    <p>
+      The code is:
+    </p>
+    {% highlight js %}
+function importSVG(sourceSVG, targetCanvas) {
+  var svgXml = (new XMLSerializer()).serializeToString(sourceSVG)
+  var ctx = targetCanvas.getContext('2d')
+  ctx.globalCompositeOperation = 'multiply'
+  var img = new Image()
+  img.height = '400'
+  img.width = '400'
+  img.onload = function() {
+    ctx.drawImage(img, 0, 0, 400, 400)
+  }
+  img.src = "data:image/svg+xml;base64," + btoa(svgXml)
+}
+
+var options = {
+  evalScripts:'never',
+  each: function(svg) {
+    svg.style.height = '400px'
+    svg.style.width = '400px'
+    importSVG(svg, document.querySelector('canvas'))
+  }
+}
+
+SVGInjector(document.querySelectorAll('.replace'), options)
+    {% endhighlight %}
     <img class="replace" src="/images/svg-blend-top.svg" height="400" width="400">
     <img class="replace" src="/images/svg-blend-bottom.svg" height="400" width="400">
     <canvas height="400" width="400"></canvas>
 
     <script src="/javascripts/svg-injector.js"></script>
     <script>
-      var toA = function(list){return Array.prototype.slice.call(list, 0)}
       function importSVG(sourceSVG, targetCanvas) {
-        svg_xml = (new XMLSerializer()).serializeToString(sourceSVG)
+        var svgXml = (new XMLSerializer()).serializeToString(sourceSVG)
         var ctx = targetCanvas.getContext('2d')
         ctx.globalCompositeOperation = 'multiply'
         var img = new Image()
@@ -26,7 +59,7 @@ date: 2015-07-21 00:00:00 -0500
         img.onload = function() {
           ctx.drawImage(img, 0, 0, 400, 400)
         }
-        img.src = "data:image/svg+xml;base64," + btoa(svg_xml)
+        img.src = "data:image/svg+xml;base64," + btoa(svgXml)
       }
 
       var options = {

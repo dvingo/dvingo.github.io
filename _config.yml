@@ -1,2 +1,4 @@
 ---
+highlighter: pygments
+excerpt_separator: ""
 url: http://dvingo.github.io

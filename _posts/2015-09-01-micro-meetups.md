@@ -4,10 +4,12 @@ title: "Micro Meetups Idea"
 date: 2015-09-01 9:36:00 -0500
 ---
 
-# An idea I think a good way to describe is as a micro meetup site.
+## Micro meetup site.
 
-You enter a neighborhood, some proposed activities and a time you will be around.
-This is publicly viewable and others and message you or just show up.
+A site/app where you:
+
+Enter a neighborhood, some proposed activities, and a time you will be around.
+This is publicly viewable and others either message you or just show up.
 
 The point is to discover other people with similar interests in a city.
 

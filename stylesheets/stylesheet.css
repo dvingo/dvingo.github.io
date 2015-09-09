@@ -159,8 +159,7 @@ pre {
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   text-wrap: normal;
-  overflow: auto;
-  overflow-y: hidden;
+  overflow: visible;
 }
 
 table {
