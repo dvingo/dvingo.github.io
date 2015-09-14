@@ -29,11 +29,15 @@ It's not fully fleshed out, so here's some basic instructions:
 
 ### A filesystem tree visualizer, using d3, ember.js, express, and neo4j:
 
+
 [http://visualizethesource.com/](http://visualizethesource.com/)
 
 Click on a project and then click on leaf nodes to view those files (scroll down).
 
 I was learning Neo4j and ember at the time, and wanted a consise, high-level view of code repostitories.
+
+I also gave a talk on this project at the Ember.js NYC May 2014 Meetup.
+Recording on [youtube](https://youtu.be/lVcSGybnP54?t=3865)
 
 ### A time tracking iOS application (circa 2013):
 [https://github.com/dvingo/a_timely_manner](https://github.com/dvingo/a_timely_manner)
