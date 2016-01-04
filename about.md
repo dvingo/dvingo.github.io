@@ -13,7 +13,7 @@ The posts on the site are a combination of random, sometimes stream of conscious
 
 ### A primitive music making app, right in the browser (written in ClojureScript and Om):
 
-[http://dvingo.github.io/web-audio-cljs/](http://dvingo.github.io/web-audio-cljs/)
+[https://dvingo.github.io/web-audio-cljs/](https://dvingo.github.io/web-audio-cljs/)
 
 It's not fully fleshed out, so here's some basic instructions:
 
