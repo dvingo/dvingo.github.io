@@ -29,12 +29,10 @@ It's not fully fleshed out, so here's some basic instructions:
 
 ### A filesystem tree visualizer, using d3, ember.js, express, and neo4j:
 
+I don't have this hosted anymore, but the code is on github. The project
+imports a filesystem directory and visualizes it in a d3 tree.
 
-[http://visualizethesource.com/](http://visualizethesource.com/)
-
-Click on a project and then click on leaf nodes to view those files (scroll down).
-
-I was learning Neo4j and ember at the time, and wanted a consise, high-level view of code repostitories.
+I was learning Neo4j and ember at the time, and wanted a concise, high-level view of code repositories.
 
 I also gave a talk on this project at the Ember.js NYC May 2014 Meetup.
 Recording on [youtube](https://youtu.be/lVcSGybnP54?t=3865)
