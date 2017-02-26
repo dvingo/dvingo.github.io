@@ -24,3 +24,11 @@ A web form allows people to enter their email address and select a book to read.
 Perhaps you can add multiple books to read multiple books at the same time.
 There will be a relation of email address to book subscription which
 would keep track of that user's offsets into the books's text files.
+
+*Update* (2017-Feb-26): An implementation of this idea was thrown together at
+an impromptu hackathon with some friends, it is no longer hosted but the code
+ is here:
+  <a target="_blank"
+     href="https://github.com/dvingo/guten_better">
+     https://github.com/dvingo/guten_better
+  </a>
