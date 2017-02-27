@@ -142,7 +142,7 @@ textbook. I found the book via a talk the authors gave at SIGGRAPH
 <a href="https://www.youtube.com/watch?v=tgVLb6fOVVc" target="_blank">
 https://www.youtube.com/watch?v=tgVLb6fOVVc</a>
 
-## Talks
+# Talks
 
 Some of the more insightful talks I've found along the way.
 
@@ -167,9 +167,16 @@ WebGL to teach computer graphics.
 <a href="https://www.youtube.com/watch?v=tgVLb6fOVVc" target="_blank">
 https://www.youtube.com/watch?v=tgVLb6fOVVc</a>
 
-UC Davis Computer Graphics class, covers core graphics concepts which.
+# Online classes
+
+UC Davis Computer Graphics class, covers core graphics concepts.
 <a href="https://www.youtube.com/watch?v=01YSK5gIEYQ&list=PL_w_qWAQZtAZhtzPI5pkAtcUVgmzdAP8g" target="_blank">
 https://www.youtube.com/watch?v=01YSK5gIEYQ&list=PL_w_qWAQZtAZhtzPI5pkAtcUVgmzdAP8g</a>
+
+UC San Diego class on edX
+
+<a href="https://courses.edx.org/courses/course-v1:UCSDx+CSE167x+2T2016/information/" target="_blank"
+https://courses.edx.org/courses/course-v1:UCSDx+CSE167x+2T2016/information/</a>
 
 A code editor in WebGL
 
@@ -181,9 +188,9 @@ Tony Parisi at HTML5 Dev Conf
 <a href="https://www.youtube.com/watch?v=c3_Q3T6Gzxk" target="_blank">https://www.youtube.com/watch?v=c3_Q3T6Gzxk
 </a>
 
-## Libraries
+# Libraries
 
-### WeGL Utils
+## WeGL Utils
 <a href="https://github.com/greggman/webgl-fundamentals/blob/master/webgl/resources/webgl-utils.js"
  target="_blank">
  https://github.com/greggman/webgl-fundamentals/blob/master/webgl/resources/webgl-utils.js
@@ -194,13 +201,13 @@ These functions can be found in a proper library:
 <a href="http://twgljs.org/docs/" target="_blank">
 http://twgljs.org/docs/</a>
 
-### MathBox
+## MathBox
 <a href="https://github.com/unconed/mathbox" target="_blank">https://github.com/unconed/mathbox</a>
 
-### regl
+## regl
 <a href="http://regl.party/" target="_blank">http://regl.party/</a>
 
-## Examples
+# Examples
 
 <a href="http://webglsamples.org/" target="_blank">http://webglsamples.org/</a>
 <a href="" target="_blank"></a>
