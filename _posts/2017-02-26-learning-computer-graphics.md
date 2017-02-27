@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reflections on learning WebGL"
+title: "Notes on learning computer graphics"
 date: 2017-02-26 9:37:00 -0500
 ---
 
@@ -188,6 +188,11 @@ Tony Parisi at HTML5 Dev Conf
  target="_blank">
  https://github.com/greggman/webgl-fundamentals/blob/master/webgl/resources/webgl-utils.js
 </a>
+
+These functions can be found in a proper library:
+
+<a href="http://twgljs.org/docs/" target="_blank">
+http://twgljs.org/docs/</a>
 
 ### MathBox
 <a href="https://github.com/unconed/mathbox" target="_blank">https://github.com/unconed/mathbox</a>
