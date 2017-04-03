@@ -1,0 +1,102 @@
+---
+layout: post
+title: "Asteroids"
+date: 2017-04-03
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      .canvas {
+        width: 100%;
+      }
+      .controls {
+        font-family: monospace;
+        margin: 0 0 1rem 0;
+      }
+      .controls__table {
+        user-select: none;
+        font-family: monospace;
+        table-layout: fixed;
+        border-collapse: collapse;
+        background: black;
+        color: white;
+        margin: 1rem 0;
+      }
+      .controls__table td,
+      .controls__table th
+      {
+        padding: .4rem 1rem;
+        border: 1px solid;
+      }
+
+      .controls__select,
+      .controls__select--selected
+      {
+        background: #d4d4d4;
+        color: black;
+        display: inline-block;
+        user-select: none;
+        border: 1px solid lightgrey;
+        border-radius: 4px;
+        margin: .2rem;
+        padding: 10px;
+        box-shadow: 2px 2px rgba(0,0,0,.5);
+      }
+
+      .controls__select:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px rgba(0,0,0,.9);
+      }
+      .controls__select:active {
+        cursor: pointer;
+        box-shadow: inset 2px 2px rgba(0,0,0,.9);
+      }
+      .controls__select--selected {
+        background: #000;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="controls">
+      <table class="controls__table">
+        <tbody>
+        <tr><th>key</th><th>action</th></tr>
+        <tr><td>w or up arrow</td><td>thrust forward</td></tr>
+        <tr><td>s or down arrow</td><td>thrust backward</td></tr>
+        <tr><td>a or left arrow</td><td>rotate ship counter clockwise</td></tr>
+        <tr><td>d or right arrow</td><td>rotate ship clockwise</td></tr>
+        <tr><td>space or main mouse down</td><td>fire bullet</td></tr>
+        <tr><td>ctrl</td><td>toggle bounding boxes</td></tr>
+        </tbody>
+      </table>
+      <div class="controls__select" id="restart">restart</div>
+      <div class="select-fancy-ship controls__select">use plane model</div>
+      <div class="select-boring-ship controls__select--selected">use geometric model</div>
+      <div class="select-scale-half controls__select">scale .5</div>
+      <div class="select-scale-one controls__select--selected">scale 1</div>
+      <div class="select-scale-two controls__select">scale 2</div>
+      <div class="select-scale-four controls__select">scale 4</div>
+    </div>
+    <script type="vertex" id="vs">
+    attribute vec4 position;
+    uniform mat4 u_viewProjection;
+    uniform mat4 u_model;
+
+    void main() {
+     gl_Position = (u_viewProjection * u_model * position);
+    }
+    </script>
+    <script type="fragment" id="fs">
+    precision mediump float;
+    uniform vec3 color;
+    void main() {
+      gl_FragColor = vec4(color, 1);
+    }
+    </script>
+    <script src="/javascripts/gl-matrix.js" charset="utf-8"></script>
+    <script src="/javascripts/asteroids.js" charset="utf-8"></script>
+  </body>
+</html>
