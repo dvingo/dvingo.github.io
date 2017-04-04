@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Asteroids"
+title: "Asteroids, the game"
 date: 2017-04-03
 ---
 <!DOCTYPE html>
@@ -17,7 +17,6 @@ date: 2017-04-03
       }
       .controls__table {
         user-select: none;
-        font-family: monospace;
         table-layout: fixed;
         border-collapse: collapse;
         background: black;
@@ -60,6 +59,53 @@ date: 2017-04-03
     </style>
   </head>
   <body>
+    <p>
+      I've been delving into computer graphics and WebGL the past few months,
+      as a way to solidify my knowledge I built an asteroids clone in JavaScript
+      with the rendering done in WebGL.
+      To deal with WebGL API boilerplate I used the twgl
+      <a href="http://twgljs.org/" target="_blank">library</a>. It also includes
+      some 4x4 matrix and vec3 helpers that are needed to handle movement and physics.
+      This was mainly a project to learn WebGL basics so I added some
+      features to confirm my understanding, like global scaling and loading a
+      3d model of a plane from
+       <a href="https://www.turbosquid.com/3d-models/free-spowith-f1-camel-3d-model/516387" target="_blank">turbosquid</a>.
+    </p>
+
+    <p>
+      Learning GPU graphics programming pairs well with learning 3d modelling
+      as so many concepts overlap, like cameras, matrix transforms, coordinate systems,
+      lighting and shading, materials, et cetera. I picked up some very basic
+      blender skills to create the single asteroid model and the geometric plane
+      model.
+      Most of what I learned about Blender was from these wonderful
+      <a href="http://gryllus.net/Blender/3D.html" target="_blank">lessons</a>.
+    </p>
+
+    <p>
+      Although the physics of asteroids is pretty minimal, it can still be daunting
+      if you haven't done it before. Luckily I found an amazing series on youtube
+       by Keith Peters which can be found
+      <a target="_blank" href="https://www.youtube.com/user/codingmath/videos?flow=list&view=0&sort=dd&live_view=500">here</a>
+      He covers a plethora of math concepts related to computer graphics and animation.
+      I highly recommend them.
+    </p>
+    <p>
+      You may notice the collisions are a bit coarse, I am using axis aligned
+      bounding boxes as it is the simplest method to get something working, but
+      doesn't provide the best results. As my focus for this project was on
+      learning I was fine with this tradeoff.
+    </p>
+    <p>
+      The playable game is below, as this was mainly a project for learning
+      it's missing some polish to make it feel like an actual game, such as points
+      and high scores and all that. Just the minimal set of features to be
+      called asteroids.
+    </p>
+    <p>
+      You can find the source code on
+      <a href="https://github.com/dvingo/webgl_asteroids" target="_blank">GitHub</a>.
+    </p>
     <div class="controls">
       <table class="controls__table">
         <tbody>

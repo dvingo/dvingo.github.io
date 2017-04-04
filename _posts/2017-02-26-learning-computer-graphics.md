@@ -175,7 +175,7 @@ https://www.youtube.com/watch?v=01YSK5gIEYQ&list=PL_w_qWAQZtAZhtzPI5pkAtcUVgmzdA
 
 UC San Diego class on edX
 
-<a href="https://courses.edx.org/courses/course-v1:UCSDx+CSE167x+2T2016/information/" target="_blank"
+<a href="https://courses.edx.org/courses/course-v1:UCSDx+CSE167x+2T2016/information/" target="_blank">
 https://courses.edx.org/courses/course-v1:UCSDx+CSE167x+2T2016/information/</a>
 
 A code editor in WebGL
